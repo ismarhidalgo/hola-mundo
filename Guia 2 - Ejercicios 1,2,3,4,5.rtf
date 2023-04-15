@@ -1,0 +1,192 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 package encuentro.pkg1.ej1;\
+\
+import java.util.Scanner;\
+\
+/**\
+ *\
+ * @author luissanchezaponte\
+ */\
+public class Encuentro1Ej1 \{\
+\
+    /**\
+     * @param args the command line arguments\
+     */\
+    public static void main(String[] args) \{\
+        // TODO code application logic here\
+        Scanner input = new Scanner(System.in);\
+\
+        System.out.print("Introduce el primer n\'famero: ");\
+        int num1 = input.nextInt();\
+\
+        System.out.print("Introduce el segundo n\'famero: ");\
+        int num2 = input.nextInt();\
+\
+        int suma = num1 + num2;\
+\
+        System.out.println("La suma de " + num1 + " y " + num2 + " es: " + suma);\
+    \}\
+    \
+\}\
+\
+_________________________________________________________________________________\
+\
+package encuentro1.ej2;\
+\
+import java.util.Scanner;\
+\
+/**\
+ *\
+ * @author luissanchezaponte\
+ */\
+public class Encuentro1Ej2 \{\
+\
+    /**\
+     * @param args the command line arguments\
+     */\
+    // Escribir un programa que pida tu nombre, lo guarde en una variable y lo muestre por pantalla.\
+\
+    public static void main(String[] args) \{\
+        // TODO code application logic here\
+        Scanner leer = new Scanner(System.in);\
+        String nombre;\
+        System.out.println("Ingrese su nombre");\
+        nombre = leer.next();\
+        System.out.println("El nombre ingresado es " +nombre+ " , bienvenido");\
+    \}\
+    \
+\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 _________________________________________________________________________________\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+package encuentro1.ej3;\
+\
+import java.util.Scanner;\
+\
+/**\
+ *\
+ * @author luissanchezaponte\
+ */\
+public class Encuentro1Ej3 \{\
+\
+    /**\
+     * @param args the command line arguments\
+     */\
+    public static void main(String[] args) \{\
+        // TODO code application logic here\
+        /*Escribir un programa que pida una frase y la muestre toda en may\'fasculas y despu\'e9s toda en min\'fasculas. \
+Nota: investigar la funci\'f3n toUpperCase() y toLowerCase() en Java.\
+         */\
+        Scanner leer = new Scanner (System.in);\
+        \
+        String frase;\
+        \
+        System.out.println("Por favor ingrese una frase");\
+        frase = leer.next();\
+        \
+        System.out.println(frase.toUpperCase());\
+        System.out.println(frase.toLowerCase());\
+    \}\
+    \}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 _________________________________________________________________________________\
+\
+public class Encuentro1Ej4 \{\
+\
+    /**\
+     * @param args the command line arguments\
+     */\
+    public static void main(String[] args) \{\
+        // TODO code application logic here\
+        /* Dada una cantidad de grados cent\'edgrados se debe mostrar su \
+        equivalente en grados Fahrenheit. La f\'f3rmula correspondiente es: F = 32 + (9 * C / 5).*/\
+     Scanner input = new Scanner (System.in);\
+    \
+     System.out.println("Ingrese la cantidad en grados celsius para transformar a F");\
+     \
+     int num = input.nextInt();\
+     \
+     double F = (num * 9/5) + 32;\
+     //19 \'b0C \'d7 9/5) + 32\
+        \
+     System.out.println("La temperatura es " + F + " grados F");        \
+        \
+    \}\
+    \
+\}\
+_________________________________________________________________________________\
+\
+package encuentro1.ej4;\
+\
+import java.util.Scanner;\
+\
+/**\
+ *\
+ * @author luissanchezaponte\
+ */\
+public class Encuentro1Ej4 \{\
+\
+    /**\
+     * @param args the command line arguments\
+     */\
+    public static void main(String[] args) \{\
+        // TODO code application logic here\
+        /* Dada una cantidad de grados cent\'edgrados se debe mostrar su \
+        equivalente en grados Fahrenheit. La f\'f3rmula correspondiente es: F = 32 + (9 * C / 5).*/\
+     Scanner input = new Scanner (System.in);\
+    \
+     System.out.println("Ingrese la cantidad en grados celsius para transformar a F");\
+     \
+     int num = input.nextInt();\
+     \
+     double F = (num * 9/5) + 32;\
+     //19 \'b0C \'d7 9/5) + 32\
+        \
+     System.out.println("La temperatura es " + F + " grados F");        \
+        \
+    \}\
+    \
+\}\
+_________________________________________________________________________________\
+\
+package encuentro.pkg1.ej5;\
+\
+import java.util.Scanner;\
+\
+/**\
+ *\
+ * @author luissanchezaponte\
+ */\
+public class Encuentro1Ej5 \{\
+\
+    /**\
+     * @param args the command line arguments\
+     */\
+    public static void main(String[] args) \{\
+        // TODO code application logic here\
+        /* Escribir un programa que lea un n\'famero entero por teclado y muestre por pantalla el doble, \
+        el triple y la ra\'edz cuadrada de ese n\'famero. Nota: investigar la funci\'f3n Math.sqrt().\
+        */\
+        Scanner input = new Scanner (System.in);\
+        \
+        System.out.println("Ingrese un numero entero");\
+        \
+        int num = input.nextInt();\
+        \
+        int doble = num + num;\
+        int triple = num * 3;\
+        double raiz = Math.sqrt(num);\
+        \
+        System.out.println("El doble del numero ingresado es " + doble + " el triple es " + triple + " la ra\'edz cuadrada es " + raiz + "");\
+    \}\
+    \
+\}\
+}
